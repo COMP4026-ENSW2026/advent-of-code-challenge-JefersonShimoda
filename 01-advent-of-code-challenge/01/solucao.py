@@ -6,7 +6,7 @@ import os
 with open(os.path.dirname(os.path.abspath(__file__)) + '/entrada.in', 'r') as arquivo:
     linhas = arquivo.readlines()
     calorias = [entrada.strip() for entrada in linhas]
- 
+
 # Percorre o array somando as calorias por elfo
 elfo = []
 soma = 0
@@ -18,7 +18,7 @@ for entrada in calorias:
         soma += int(entrada)
 
 # Se a soma atual for maior que 0, insere no array também
-if(soma > 0):
+if (soma > 0):
     elfo.append(soma)
 
 # Imprime a maior soma
@@ -28,4 +28,4 @@ print(max(elfo))
 
 # Ordena o array de forma descrescente e soma os 3 primeiros índices
 elfo.sort(reverse=True)
-print(elfo[0]+elfo[1]+elfo[2])
+print(elfo[0] + elfo[1] + elfo[2])
