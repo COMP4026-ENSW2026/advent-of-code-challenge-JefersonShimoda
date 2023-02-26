@@ -1,6 +1,5 @@
 import os
 
-
 # Lê o arquivo e coloca todas as linhas em um array
 with open(os.path.dirname(os.path.abspath(__file__)) + '/entrada.in', 'r') as arquivo:
     linhas = arquivo.readlines()
