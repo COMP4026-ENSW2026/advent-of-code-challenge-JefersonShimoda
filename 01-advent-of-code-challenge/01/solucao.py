@@ -1,5 +1,7 @@
 import os
 
+#### PARTE 01 ####
+
 # Lê o arquivo e coloca todas as linhas em um array
 with open(os.path.dirname(os.path.abspath(__file__)) + '/entrada.in', 'r') as arquivo:
     linhas = arquivo.readlines()
@@ -21,3 +23,9 @@ if(soma > 0):
 
 # Imprime a maior soma
 print(max(elfo))
+
+#### PARTE 02 ####
+
+# Ordena o array de forma descrescente e soma os 3 primeiros índices
+elfo.sort(reverse=True)
+print(elfo[0]+elfo[1]+elfo[2])
